@@ -1,3 +1,174 @@
-h1{
-    color: green;
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #1A0B2E;
+}
+.gradient{
+    background: linear-gradient(to top, #FFD86F, #FF4ECD, #8F00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient1{
+    background: linear-gradient(to right,  #FF4ECD, #8F00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* navbar */
+
+.name{
+    transition: all 0.6s ease;
+}
+.name:hover{
+    transform: translatey(-5px);
+    
+}
+.navbar{
+    background-color: #1A0B2E;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    border-bottom: 1px solid rgb(71, 70, 70);
+    animation:lefttoright 0.7s ease ;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.6s ease;
+}
+a:hover{
+    transform: translatey(-5px);
+    text-decoration: underline;
+}
+.btn{
+     background: linear-gradient(20deg, #FFD86F, #FF4ECD, #8F00FF);
+     color: white;
+     border: none;
+     padding: 6px;
+     border-radius: 20px;
+     font-weight: bold;
+     transition: all 0.6s ease;
+
+}
+.btn:hover{
+    transform: translatey(-5px);
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+@keyframes lefttoright {
+    from{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes righttoleft {
+    from{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* frist-section */
+.frist-section{
+    background-image: url("./assets/hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:60px 0px;
+    background-position: center;
+    animation:righttoleft 0.7s ease ;
+    
+}
+.microback{
+    background-image: url(./assets/hero-circle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 100px;
+    position: relative;
+    
+}
+.badge{
+    color: black;
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    background-color: #00FF88;
+    padding:5px 10px;
+    border: none;
+    border-radius: 20px;
+}
+.fristroot{
+    text-align: center;
+    color: white;
+}
+
+.btnsection{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+}
+.position{
+    display:flex; justify-content: center; align-items: center; gap: 5px; padding: 5px 10px;
+}
+.masagebtn{
+    border: 1px solid #00FF88;
+    color: #00FF88;
+    background: transparent;
+    border-radius: 20px;
+    transition: all 0.6s ease;
+}
+.masagebtn:hover{
+    transform: translatey(-5px);
+}
+
+/* second-section */
+.second-section{
+   
+    margin: 0px 200px;
+    border-bottom: 1px solid rgb(71, 70, 70);
+}
+.second{
+    text-align: center;
+    color: white;
+    padding: 0px 67px;
+}
+
+/* third section  */
+
+.viewbadge{
+    color: #00FF88;
+}
+.pera{
+    color: white;
+}
+
+.trhird-section{
+ padding:50px 200px;
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ justify-content: center;
+ align-items: center;
+ text-align: center;
 }
