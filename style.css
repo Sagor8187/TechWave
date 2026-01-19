@@ -57,6 +57,18 @@ a:hover{
      transition: all 0.6s ease;
 
 }
+.btns{
+     background: linear-gradient(20deg, #FFD86F, #FF4ECD, #8F00FF);
+     color: white;
+     border: none;
+     padding: 6px;
+     border-radius: 20px;
+     font-weight: bold;
+     transition: all 0.6s ease;
+}
+.btns:hover{
+    transform: translatey(-5px);
+}
 .btn:hover{
     transform: translatey(-5px);
 }
@@ -65,6 +77,9 @@ a:hover{
     display: flex;
     justify-content: center;
     gap: 70px;
+}
+.hamburger{
+    display: none;
 }
 
 @keyframes lefttoright {
@@ -296,14 +311,20 @@ a:hover{
 /* footer */
 .icon{
     display: flex;
-    gap: 10px;
+    gap:4px;
     align-items: center;
-}
-.icons{
     color: white;
+}
+
+.icons{
     display: flex;
-    gap: 20px;
     justify-content: center;
+    gap: 50px;
+}
+.iconss{
+     display: flex;
+    justify-content: center;
+    gap: 50px;
 }
 .copy{
     color: white;
@@ -312,9 +333,143 @@ a:hover{
 .footers{
     text-align: center;
     background-image: url(./assets/footer-bg.png);
-    padding: 120px;
+    padding: 100px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 
+}
+
+.innfooter{
+    
+}
+
+
+/* responsive layout  */
+
+@media  (max-width:576px) {
+   .link,.btns{
+    display: none;
+   }
+   .hamburger{
+    display:block;
+   }
+
+   /* .frist-section{
+    background-image: url("./assets/hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:60px 0px;
+    background-position: center;
+    animation:righttoleft 0.7s ease ;
+    
+} */
+ .navbar{
+    padding: 0px 20px;
+ }
+ .frist-section{
+    background-size: contain;
+    
+ }
+
+ /* .microback{
+    background-image: url(./assets/hero-circle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 100px;
+    position: relative;
+    
+} */
+ .microback{
+   background-size:160px;
+    padding: 50px;
+   margin-top: 100px;
+
+ }
+ .microimage{
+    height: 80px;
+ }
+ .badge{
+   top: 36%;
+   right: 30%;
+ }
+ .fristroot{
+    padding: 0 5px;
+ }
+ .second-section{
+    margin: 10px;
+ }
+ .second{
+    padding: 20px;
+ }
+
+ /* .trhird-section{
+ padding:50px 200px;
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+} */
+ .trhird-section{
+    grid-template-columns: repeat(2,1fr);
+    padding:10px;
+ }
+ .layouts{
+
+    grid-template-areas:
+    "m"
+    "mo"
+    "g"
+    "e"
+    "r"
+    ;
+    gap: 20px;
+    
+
+}
+.four-section{
+    background-color: #230E3D;
+    padding: 20px;
+}
+.gridhero{
+    font-size: 25px;
+}
+
+.cards{
+    flex-direction: column;
+}
+.feature{
+    padding:20px;
+    
+}
+.hostmain{
+    flex-direction: column;
+}
+.meet{
+    padding: 20px;
+    text-align: center;
+}
+.logo{
+    justify-content: center;
+}
+
+.icons{
+   flex-direction: column;
+   gap: 5px;
+
+}
+.iconss{
+    gap: 5px;
+}
+.footers{
+padding: 10px;
+/* background-color:#2b104b ; */
+background-size: cover;
+background-position: center;
+object-fit: contain;
+
+
+}
 }
