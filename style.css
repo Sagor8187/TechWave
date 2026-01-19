@@ -172,3 +172,68 @@ a:hover{
  align-items: center;
  text-align: center;
 }
+
+/* four-section */
+.four-section{
+    background-color: #230E3D;
+    padding: 140px 200px;
+}
+
+
+/* grid layout */
+
+.music{
+    grid-area: m;
+    background-color: #351165;
+    border-radius: 10px;
+    padding: 100px 40px;
+    color: white;
+}
+.mobile{
+    grid-area: mo;
+    background-color: #351165;
+    border-radius: 10px;
+    padding: 40px 40px;
+    color: white;
+}
+.global{
+    grid-area: g;
+    background-color: #351165;
+    border-radius: 10px;
+    padding: 40px 40px;
+    color: white;
+}
+.exclusive{
+    grid-area: e;
+    background-color: #351165;
+    border-radius: 10px;
+    padding: 40px 40px;
+    color: white;
+}
+.rich{
+    grid-area: r;
+    background-color: #351165;
+    border-radius: 10px;
+    padding: 40px 40px;
+    color: white;
+}
+
+.layouts{
+    display: grid;
+    grid-template-areas:
+    "m mo mo mo"
+    "m mo mo mo"
+    "m g g g "
+    "m g g g "
+    "e e e r"
+    ;
+    gap: 30px;
+    
+
+}
+
+.gridhero{
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+}
