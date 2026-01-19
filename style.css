@@ -237,3 +237,37 @@ a:hover{
     padding-bottom: 20px;
     color: white;
 }
+
+/* fifth section Feature */
+.feature{
+    padding: 120px 100px;
+    
+}
+
+.contents{
+    color: white;
+    padding: 24px;
+}
+.time{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #00FF88;
+}
+
+.card{
+    background-color: #351165;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.cards{
+    display: flex;
+    gap: 10px;
+}
+
+
+.feature-hero{
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
