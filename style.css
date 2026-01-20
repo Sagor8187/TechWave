@@ -390,9 +390,21 @@ a:hover{
  .microimage{
     height: 80px;
  }
+
+ /* .badge{
+    color: black;
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    background-color: #00FF88;
+    padding:5px 10px;
+    border: none;
+    border-radius: 20px;
+} */
  .badge{
-   top: 36%;
+   top: 38%;
    right: 30%;
+   font-size: small;
  }
  .fristroot{
     padding: 0 5px;
